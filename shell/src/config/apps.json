@@ -1,0 +1,23 @@
+{
+  "branding": {
+    "name": "Micro Frontend"
+  },
+  "apps": [
+    {
+      "id": "app1",
+      "name": "Application One",
+      "description": "First micro frontend application",
+      "path": "/app1",
+      "url": "http://localhost:3001",
+      "enabled": true
+    },
+    {
+      "id": "app2",
+      "name": "Application Two",
+      "description": "Second micro frontend application",
+      "path": "/app2",
+      "url": "http://localhost:3002",
+      "enabled": true
+    }
+  ]
+}
