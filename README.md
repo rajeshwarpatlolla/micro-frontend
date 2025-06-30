@@ -63,5 +63,22 @@ cd app2 && npm run biuld && npm run preview
 - Use the application switcher in the header or the cards on the home page to navigate to App1 or App2.
 - Each micro frontend runs independently but is loaded into the shell for a seamless user experience.
 
+## Root-level Scripts
+
+The root `package.json` includes several helpful scripts to streamline development:
+
+| Script            | Description                                                                 |
+|-------------------|-----------------------------------------------------------------------------|
+| `npm run install:all`   | Installs dependencies in the root, shell, app1, and app2 directories.         |
+| `npm run dev:shell`     | Starts the shell app in development mode.                                    |
+| `npm run dev:app1`      | Starts App1 in development mode.                                             |
+| `npm run dev:app2`      | Starts App2 in development mode.                                             |
+| `npm run build:all`     | Builds shell, app1, and app2 in parallel.                                    |
+| `npm run preview:app1`  | Builds and previews App1 locally.                                            |
+| `npm run preview:app2`  | Builds and previews App2 locally.                                            |
+| `npm run preview:all`   | Builds and previews both App1 and App2 in parallel (requires `concurrently`).|
+
+These scripts help you quickly set up, develop, build, and preview all parts of the micro-frontend platform from the root directory.
+
 ## License
 MIT
